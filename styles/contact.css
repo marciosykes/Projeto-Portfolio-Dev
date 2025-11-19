@@ -29,10 +29,11 @@
 .social-medias {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
     width: 400px;
     gap: 16px;
     margin: auto;
+    text-decoration: none;
     & .color-background {
         background-color: var(--gray-300);
         height: 68px;
@@ -43,7 +44,11 @@
         align-items: center;
         gap: 16px;
         border-radius: 8px;
+        transition: all .2s ease-in-out;
+
         &:hover {
+            transform: scale(1.10);
+            transition: all .2s ease-in-out;
             outline: 2px solid var(--blue);
         }
         &:hover svg path {
@@ -55,4 +60,8 @@
         margin-left: auto;
         width: 20px;
     }
+}
+
+.social-medias a.color-background {
+    text-decoration: none;
 }

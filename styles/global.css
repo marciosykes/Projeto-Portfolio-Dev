@@ -14,6 +14,7 @@ html {
     --red: #E3646E;
     --purple: #BB72E9;
     --blue: #3996DB;
+    --dark-blue: #1E3A8A;
     --green: #82BC4F;
     --yellow: #EABD5F;
 
@@ -34,4 +35,59 @@ html {
     --subtitle: 400 20px/120% var(--secondary-font);
     --text-md: 400 16px/140% var(--tertiary-font);
     --text-sm: 400 14px/140% var(--tertiary-font);
+}
+
+
+.swal2-popup.meu-modal-dark {
+    background: var(--gray-300) !important; 
+    border-radius: 12px !important;
+}
+
+
+.swal2-popup.meu-modal-dark .swal2-title,
+.swal2-popup.meu-modal-dark .swal2-content {
+    color: var(--gray-600) !important; 
+    font-family: var(--primary-font) !important;
+}
+
+
+.swal2-popup .meu-botao-azul {
+    background-color: var(--blue) !important; 
+    color: var(--gray-600) !important; 
+    font-weight: 800 !important; 
+    border-radius: 8px !important;
+    padding: 10px 20px !important;
+    box-shadow: none !important;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+
+.swal2-popup .meu-botao-azul:hover {
+    background-color: #2a7ac6 !important; 
+    transform: translateY(-1px);
+    transform: scale(1.15);
+    transition: all .3s ease-in-out;
+}
+
+.swal2-popup .meu-botao-azul:focus {
+    box-shadow: 0 0 0 3px rgba(57, 150, 219, 0.5) !important;
+}
+
+footer {
+    text-align: center;
+    padding: 32px 0;
+    font: var(--text-md);
+    color: var(--gray-500);
+    background-color: var(--gray-200); 
+}
+
+footer a {
+    color: var(--gray-600);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: var(--blue);
 }

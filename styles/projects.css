@@ -25,6 +25,8 @@ section {
     width: 330px;
     padding: 12px;
     border-radius: 12px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
 
     & img {
         width: 100%;
@@ -44,6 +46,8 @@ section {
 
     &:hover {
         outline: 2px solid var(--gray-400);
+        transform: scale(1.05);
+        transition: all .2s ease-in-out;
     }
 }
 

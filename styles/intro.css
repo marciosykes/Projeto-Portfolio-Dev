@@ -24,6 +24,12 @@ header p {
 .avatar {
     width: 96px;
     height: 96px;
+    transition: all .3s ease-in-out;
+}
+
+.avatar:hover {
+    transform: scale(1.5);
+    transition: all .3s ease-in-out;
 }
 
 .tags {

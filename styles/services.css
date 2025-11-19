@@ -29,6 +29,12 @@
         width: 280px;
         height: 155px;
         padding: 24px;
+        transition: all .2s ease-in-out;
+    }
+
+    & .service:hover {
+        transform: scale(1.10);
+        border: 1px solid var(--gray-400);
     }
 
     & .service p {
@@ -40,6 +46,7 @@
         font: var(--title-sm);
         color: var(--gray-600);
     }
+    
 }
 
 .services-text {
